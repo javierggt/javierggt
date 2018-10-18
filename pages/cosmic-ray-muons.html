@@ -109,12 +109,15 @@
     <p>Muons in cosmic ray showers are the best handle we have to determine the mass of the primary cosmic rays. Well... they would be if the simulations agreed with data! If our simulations were correct, we could use the knowledge derived from them. We could determine the energy and mass of a primary cosmic ray if we simultaneously measure the electrons and the muons in the resulting cosmic ray shower. This can be seen in this figure produced from simulations:
  <img src="/images/electron_muon_scatter.png" alt="drawing" width="300"/></p>
 <p>Unfortunately, simulated air showers do not produce the same number of muons as the real ones. The difference between simulations and data can not be explained with heavier or lighter primary cosmic rays. Discussing this would have to be done in another article. To know more, check <a href="https://physics.aps.org/articles/v9/125">Viewpoint: Cosmic-Ray Showers Reveal Muon Mystery</a>.</p>
+<h1>The Analysis</h1>
 <p>I have measured the number of muons in air showers using the data from the IceCube Neutrino Observatory. This is one of the main results currently used to validate and develop the simulations of cosmic ray interactions in the atmosphere. A proceeding for the first version of this analysis can be found in <a href="https://arxiv.org/abs/1501.03415">arXiv:1501.03415</a>. The code for this analysis can be found here:</p>
 <ul>
 <li><a href="https://github.com/javierggt/icecube/tree/master/icetop_muon_scripts">code</a>. Currently in a private repository.</li>
 <li><a href="https://github.javierggt.com/icecube/icetop_muon_scripts">documentation</a>.</li>
 </ul>
 <p>The number of muons is determined from agregate data taken over three years. The entire dataset, after after filtering and processing, takes a bit more than 1 TB. From this data, we get a set of histograms that can be seen in the following application. You can browse the distribution of signals measured at in our detector for various cosmic ray energies and arrival directions (you can set these in the top-left figure). The lines in the bottom figures correspond to the predictive model used to infer the muon number.</p>
+<!-- this is to have a background, the app should provide its own -->
+
 <div style="background-color:white">
 <iframe src="https://muons.javierggt.com" frameborder=0 height=900 width=1100> Not supported </iframe>
 </div>
@@ -198,6 +201,15 @@
 
     </footer>
 
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-127746357-1', 'auto');
+    ga('send', 'pageview');
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
